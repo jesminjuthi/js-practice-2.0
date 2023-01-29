@@ -102,4 +102,20 @@ const tipCalculator = (foodCost, tipAmount) => {
     return totalBill
 }
 
-console.log(tipCalculator(100, 20));
+// console.log(tipCalculator(100, 20));
+
+// * Array
+
+const fruitsName = ['🍌', '🍎', '🍇', '🍊', '🥭']
+console.log(fruitsName); // this will print all the elements
+
+console.log(fruitsName[2]); // this will print the 3rd one
+
+// * Array methods (push, slice, indexOf, length)
+
+fruitsName.push('🫐')
+console.log(fruitsName); // this will add the element at the end of the Array
+
+console.log(fruitsName.slice(0, 4)); // It will print 0 to 4 index
+console.log(fruitsName.indexOf('🍊'));
+console.log(fruitsName.length);
