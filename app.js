@@ -42,6 +42,19 @@
     Random 👉 Gives Number Between 0 and 1
 */
 
+// * Conditional Operators -> ==  === > < >= <= != !==  
+// * Baby Weather App 
+
+// let weather = prompt('What is the weather?')
+// if(weather == 'cold') {
+//     console.log('Wear a warm cloth 🧥');
+// } else if (weather == 'rainy') {
+//     console.log('Grab an umbrella ☔');
+// } else {
+//     console.log('Put your glasses 😎');
+// }
+
+
 
 
 
