@@ -54,7 +54,52 @@
 //     console.log('Put your glasses 😎');
 // }
 
+// * Function 
+// * Normal Function with 0 argument
 
+function myName() {
+    console.log('Juthi')
+}
 
+// myName();
 
+// * Function with arguments 
 
+function sum1(a, b) {
+    console.log(a + b)
+}
+
+// sum1(5, 7)
+
+//* Function using Return and template literals (``)
+
+function greeting(name) {
+    return `Hi, ${name}! Nice to meet you 😃`
+}
+
+console.log(greeting('juthi'));
+
+// * Arrow Function => 
+// with explicit return 
+
+const sum = (a, b) => {
+    return a + b
+}
+
+// console.log(sum(5, 7));
+
+// * Arrow Function with implicit return and curly braces 
+
+const sumArrow = (a,b) => a + b
+// console.log(sumArrow(5, 4));
+
+// * Tip calculator using arrow function 🔥 
+
+const tipCalculator = (foodCost, tipAmount) => {
+    let tipPercent = tipAmount / 100
+    let totalTip = foodCost * tipPercent
+    let totalBill = sum(foodCost, totalTip) // sum function created above 👆
+    return totalBill
+}
+
+console.log(tipCalculator(100, 20));
