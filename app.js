@@ -12,7 +12,7 @@
 // let sentence = "Let's learn JS! Let's goooo!";
 // console.log(sentence);
 
-//* Operators -> + - * / % ** 
+//* Operators 👉 + - * / % ** 
 //*** 🔥 Tips: How to take input from user? -> 🤔-> using "Prompt() function" 😃 
 //* NB: Prompt returns sting as value  
 
@@ -42,7 +42,7 @@
     Random 👉 Gives Number Between 0 and 1
 */
 
-// * Conditional Operators -> ==  === > < >= <= != !==  
+// * Conditional Operators 👉 ==  === > < >= <= != !==  
 // * Baby Weather App 
 
 // let weather = prompt('What is the weather?')
@@ -77,7 +77,7 @@ function greeting(name) {
     return `Hi, ${name}! Nice to meet you 😃`
 }
 
-console.log(greeting('juthi'));
+// console.log(greeting('juthi'));
 
 // * Arrow Function => 
 // with explicit return 
@@ -119,3 +119,43 @@ console.log(fruitsName); // this will add the element at the end of the Array
 console.log(fruitsName.slice(0, 4)); // It will print 0 to 4 index
 console.log(fruitsName.indexOf('🍊'));
 console.log(fruitsName.length);
+
+// * Objects 👉 { key: value } 
+
+const person = {
+    name: 'Jesmin Juthi',
+    profession: 'Developer',
+    mobile: '+88019000000'
+}
+
+console.log(person); // show all the elements
+console.log(person.name); // access the name only with dot notation
+console.log(person['mobile']) // bracket notation to access specific element from object
+
+// assign new item into the object
+
+person['address'] = 'Dhaka, Bangladesh'
+console.log(person.address);
+
+// * Object in a function 
+
+const bioInfo = (name, age, occupation, assets, debt) => {
+    const person = {
+        name: name,
+        age: age,
+        occupation: occupation,
+        assets: assets,
+        debt: debt,
+        // ! We directly can't do any operators with the previous items that's why we will use another function in the object
+        netWorth: function() {
+            return this.assets - this.debt // we have to use this keyword to access the items
+        }
+    }
+    //! to access the netWorth, we have to use person.netWorth() <- like this because this has a function inside 🙂
+
+    const intro = `Hi! I'm ${person.name}. I'm a ${person.occupation}. My total assets is ${person.assets} BDT and total debt is ${person.debt} BDT. So my net worth is ${person.netWorth()} BDT. 😎`
+    
+    return intro
+}
+
+console.log(bioInfo('Jesmin', '23', 'Developer', 50000, 0));
