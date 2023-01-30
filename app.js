@@ -107,18 +107,18 @@ const tipCalculator = (foodCost, tipAmount) => {
 // * Array
 
 const fruitsName = ['🍌', '🍎', '🍇', '🍊', '🥭']
-console.log(fruitsName); // this will print all the elements
+// console.log(fruitsName); // this will print all the elements
 
-console.log(fruitsName[2]); // this will print the 3rd one
+// console.log(fruitsName[2]); // this will print the 3rd one
 
 // * Array methods (push, slice, indexOf, length)
 
 fruitsName.push('🫐')
-console.log(fruitsName); // this will add the element at the end of the Array
+// console.log(fruitsName); // this will add the element at the end of the Array
 
-console.log(fruitsName.slice(0, 4)); // It will print 0 to 4 index
-console.log(fruitsName.indexOf('🍊'));
-console.log(fruitsName.length);
+// console.log(fruitsName.slice(0, 4)); // It will print 0 to 4 index
+// console.log(fruitsName.indexOf('🍊'));
+// console.log(fruitsName.length);
 
 // * Objects 👉 { key: value } 
 
@@ -128,14 +128,14 @@ const person = {
     mobile: '+88019000000'
 }
 
-console.log(person); // show all the elements
-console.log(person.name); // access the name only with dot notation
-console.log(person['mobile']) // bracket notation to access specific element from object
+// console.log(person); // show all the elements
+// console.log(person.name); // access the name only with dot notation
+// console.log(person['mobile']) // bracket notation to access specific element from object
 
 // assign new item into the object
 
 person['address'] = 'Dhaka, Bangladesh'
-console.log(person.address);
+// console.log(person.address);
 
 // * Object in a function 
 
@@ -160,4 +160,31 @@ const bioInfo = (name, age, occupation, assets, debt) => {
     return intro
 }
 
-console.log(bioInfo('Jesmin', '23', 'Developer', 50000, 0));
+// console.log(bioInfo('Jesmin', '23', 'Developer', 50000, 0));
+
+// * For loop
+
+// let numbers = [1, 3, 5, 2, 9, 10, 15]
+
+// old format 
+// for(i = 0; i < numbers.length; i++){
+//     console.log(numbers[i]); // this will print all the elements in the array
+// }
+
+// New array method 🔥🔥🔥
+
+// for (const number of numbers) {
+//     console.log(number); // this will give exactly the same output above 👆
+// }
+
+// double the number 
+
+const double = (numbers) => {
+    let result = [];
+    for (const number of numbers) {
+        result.push(number * 2)
+    }
+    return result;
+}
+
+// console.log(double([1, 2, 5, 9, 10]));
