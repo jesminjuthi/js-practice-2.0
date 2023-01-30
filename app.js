@@ -151,7 +151,9 @@ const bioInfo = (name, age, occupation, assets, debt) => {
             return this.assets - this.debt // we have to use this keyword to access the items
         }
     }
-    //! to access the netWorth, we have to use person.netWorth() <- like this because this has a function inside 🙂
+    //! to access the netWorth, we have to use person.netWorth() <- like this because this is a method 🙂
+    // person.name is a Property
+    // person.netWorth() is a method
 
     const intro = `Hi! I'm ${person.name}. I'm a ${person.occupation}. My total assets is ${person.assets} BDT and total debt is ${person.debt} BDT. So my net worth is ${person.netWorth()} BDT. 😎`
     
